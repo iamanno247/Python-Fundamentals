@@ -1,15 +1,10 @@
-score = int(input())
+year = int(input())
 
-# TODO: work out which band `score` falls in and print its single letter.
-# Print exactly one of: A B C D F
+# One boolean expression over `year` goes here. It must be True for exactly
+# the leap years. Replace False; do not change the printing below.
+is_leap = False
 
-if score >= 90:
-  print("A")
-elif score >= 80:
-  print("B")
-elif score >= 70:
-  print("C")
-elif score >= 60:
-  print("D")
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("leap")
 else:
-  print("F")
+    print("not leap")
