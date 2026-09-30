@@ -1,10 +1,9 @@
-year = int(input())
+n = int(input())
 
-# One boolean expression over `year` goes here. It must be True for exactly
-# the leap years. Replace False; do not change the printing below.
-is_leap = False
+# TODO: print the ten lines of the table for n, one line per product.
+# Loop over the numbers 1 through 10 and build each line with an f-string.
+# Nothing is printed yet, so every test fails until you add the loop.
 
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print("leap")
-else:
-    print("not leap")
+for x in range (1, 11):
+  multi = n * x
+  print(f"{n} x {x} = {multi}")
