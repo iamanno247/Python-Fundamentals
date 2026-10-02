@@ -1,13 +1,9 @@
-total = 0
+n = int(input())
 
-# TODO: keep reading integers and adding them to total.
-# Stop as soon as the value you read is the sentinel, and leave it out of the total.
-
-while True:
-    num = int(input())
-    if num == 0:
-        break
-    else:
-        total += num
-        continue
-print(total)
+for row in range(1, n + 1):
+    # TODO: add an inner loop over the columns 1..n.
+    # Print each cell's digit without ending the line,
+    # and let the print() below close the row.
+    for column in range(1, n + 1):
+        print(row * column % 10, end="")
+    print()
